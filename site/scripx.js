@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const list = document.getElementById('benefits-list');
 
   if (btn && list) {
+    // Garante que a lista começa oculta e o texto do botão correto
+    list.style.display = 'none';
+    btn.textContent = 'Mostrar Benefícios';
+
     btn.addEventListener('click', function () {
       if (list.style.display === 'none' || list.style.display === '') {
         list.style.display = 'block';
@@ -12,6 +16,5 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.textContent = 'Mostrar Benefícios';
       }
     });
-    // Inicializa o texto do botão
-    btn.textContent = 'Mostrar Benefícios';
-    list.style.display
+  }
+});
