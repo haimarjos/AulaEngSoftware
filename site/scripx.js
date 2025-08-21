@@ -13,6 +13,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
     // Inicializa o texto do botão
-    btn.textContent = 'Ocultar Benefícios';
-  }
-});
+    btn.textContent = 'Mostrar Benefícios';
+    list.style.display
